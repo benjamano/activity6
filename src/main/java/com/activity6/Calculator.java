@@ -35,20 +35,20 @@ public class Calculator {
 
         switch (operation) {
             case 1:
-                result = numOne + numTwo;
+                result = this.numOne + this.numTwo;
                 DisplayResult("+"); 
                 break;
             case 2:
-                result = numOne - numTwo;
+                result = this.numOne - this.numTwo;
                 DisplayResult("-");
                 break;
             case 3:
-                result = numOne * numTwo;
-                DisplayResult("*"); 
+                result = this.numOne * this.numTwo;
+                DisplayResult("*");
                 break;
             case 4:
-                if (numTwo != 0) {
-                    result = numOne / numTwo;
+                if (this.numTwo != 0) {
+                    result = this.numOne / this.numTwo;
                 } else {
                     System.out.println("Cannot divide by zero.");
                 }
